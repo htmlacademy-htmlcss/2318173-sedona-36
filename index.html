@@ -91,22 +91,34 @@
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="button search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-      <form class="search-form">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="Post">
         <legend class="search-form-title">Поиск гостиницы в Седоне</legend>
         <label class="search-form-label" for="day-of-arrival">Дата заезда:</label>  
-        <input type="date" step="date" id="day-of-arrival"required>
-        <p>Мы не можем отправить вас в прошлое.</p>
+          <input type="date" step="date" id="day-of-arrival"required>
+          <p>Мы не можем отправить вас в прошлое.</p>
         <label class="search-form-label" for="day-of-departure">Дата выезда:</label>  
-        <input type="date" step="date" id="day-of-departure"required>
-        <p>На эти даты есть свободные номера. Пока есть.</p>
+          <input type="date" step="date" id="day-of-departure"required>
+          <p>На эти даты есть свободные номера. Пока есть.</p>
         <label class="search-form-label" for="adults">Взрослые:</label>
-        <input type="number" min="1" max="10" step="1" id="adults">
+          <input type="number" min="1" max="10" step="1" id="adults">
         <label class="search-form-label" for="children">Дети:</label>
-        <input type="number" min="1" max="10" step="1" id="children">
-        <input type="button">
-        <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-        <input type="submit" name="search_form" value="Найти">
+          <input type="number" min="1" max="10" step="1" id="children">
+          <input type="button">
+          <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+        <button type="submit" name="search_form">
+          <span class="visually-hidden">Найти</span>
+        </button>
       </form>
+    </section>
+    <section class="subscription">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="subscription-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required/>
+        <button class="button subscription-button" type="submit">
+          <span class="visually-hidden">Отправить</span>
+        </button>
+      </form> 
     </section>
     </main>
     
