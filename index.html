@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo-link" href="#"><img class="main-logo" src="http://dummyimage.com/138x64/c0c0c0" /></a>
+      <a class="logo-link" href="#"><img class="main-logo" alt="логотип" src="http://dummyimage.com/138x64/c0c0c0" ></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -21,23 +21,19 @@
           </li>
         </ul>
       </nav>
-      <nav class="secondary-navigation">
-        <li class="secondary-navigation-item">
+      <nav>
             <a class="secondary-navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
-          </li>
-          <li class="secondary-navigation-item">
             <a class="secondary-navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
-          </li>
       </nav>
       <button class="wish-button">Хочу сюда!</button>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden"> Добро пожаловать в Седону!</h1>
-      <img class="inscription-logo" src="http://dummyimage.com/458x352/c0c0c0" alt="Надпись To the gorgeous">
+      <img class="inscription-logo" src="http://dummyimage.com/458x352/c0c0c0" alt="Надпись">
       <section class="advantages">
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -93,7 +89,7 @@
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="subscription-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required/>
+        <input class="subscription-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
         <button class="button subscription-button" type="submit">
           <span class="sending-button">Отправить</span>
         </button>
@@ -122,42 +118,44 @@
       </ul>
     </section>
     <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" src="http://dummyimage.com/138x64/c0c0c0"></a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" alt="логотип академии" src="http://dummyimage.com/138x64/c0c0c0"></a>
     </footer>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="Post">
-        <legend class="search-form-title">Поиск гостиницы в Седоне</legend>
-        <button class="close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <label class="search-form-label" for="day-of-arrival">Дата заезда:</label>  
-          <input type="date" type="text" name="day-of-arrival" id="day-of-arrival" required>
-          <p>Мы не можем отправить вас в прошлое.</p>
-        <label class="search-form-label" for="day-of-departure">Дата выезда:</label>  
-          <input type="date" type="text" name="day-of-departure" id="day-of-departure" required>
-          <p>На эти даты есть свободные номера. Пока есть.</p>
-        <label class="search-form-label" for="adults">Взрослые:</label>
-          <button class="plus-minus-button">
-            <span>-</span>
+        <fieldset class="search-form-group">
+          <legend class="search-form-title">Поиск гостиницы в Седоне</legend>
+          <button class="close-button">
+            <span class="visually-hidden">Закрыть</span>
           </button>
+          <label class="search-form-label" for="day-of-arrival">Дата заезда:</label>  
+            <input type="text" name="day-of-arrival" id="day-of-arrival" required>
+            <p>Мы не можем отправить вас в прошлое.</p>
+          <label class="search-form-label" for="day-of-departure">Дата выезда:</label>  
+            <input type="text" name="day-of-departure" id="day-of-departure" required>
+            <p>На эти даты есть свободные номера. Пока есть.</p>
+          <label class="search-form-label" for="adults">Взрослые:</label>
+            <button type="button" class="plus-minus-button">
+              <span>-</span>
+           </button>
           <input type="number" min="1" max="10" step="1" name="adults" id="adults">
-          <button class="plus-minus-button">
+          <button type="button" class="plus-minus-button">
             <span>+</span>
           </button>
-        <label class="search-form-label" for="children">Дети:</label>
-        <button class="plus-minus-button">
+          <label class="search-form-label" for="children">Дети:</label>
+          <button type="button" class="plus-minus-button">
             <span>-</span>
           </button>
           <input type="number" min="1" max="10" step="1" name="children" id="children">
-          <button class="plus-minus-button">
+          <button type="button" class="plus-minus-button">
             <span>+</span>
           </button>
-          <button class="information-button">
+          <button type="button" class="information-button">
             <span>i</span>
           </button>
           <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
         <button type="submit" name="search_form">
           <span class="search-form-button">Найти</span>
         </button>
+        </fieldset>
       </form>
   </body>
 </html>
