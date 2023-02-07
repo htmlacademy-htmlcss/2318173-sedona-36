@@ -40,11 +40,11 @@
             <a class="breadcrumbss-link visually-hidden" href="index.html">Главная</a>  
           </li>
           <li>
-            <a class="breadcrumbss-link">Гостиницы</a>
+            <a class="breadcrumbss-link breadcrumbs-text">Гостиницы</a>
           </li>
         </ul>  
         <section class="hotel-catalog">
-          <h2 class="catalog-title visually-hidden">Поиск гостиницы с фильтрами</h2>
+          <h2 class="catalog-title visually-hidden hidden-title">Поиск гостиницы с фильтрами</h2>
           <form class="catalog-filter_form" action="https://echo.htmlacademy.ru/" method="Post">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -95,8 +95,8 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
              </fieldset> 
-            <input type="submit" name="send_form" value="Применить">
-            <input type="reset" name="clear" value="Сбросить">
+            <input class="catalog-submit button" type="submit" name="send_form" value="Применить">
+            <input class="catalog-reset button" type="reset" name="clear" value="Сбросить">
           </form>
         </section>
       </header>
@@ -125,7 +125,7 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 4000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
+            <a class="hotel-card-button-more button" href="#">Подробнее</a>
             <a class="hotel-card-button button" href="#">В избранное</a>
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
@@ -140,7 +140,7 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 5000 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
+            <a class="hotel-card-button-more button" href="#">Подробнее</a>
             <a class="hotel-card-button button" href="#">В избранное</a>
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
@@ -155,7 +155,7 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 2500 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
+            <a class="hotel-card-button-more button" href="#">Подробнее</a>
             <a class="hotel-card-button button" href="#">В избранное</a>
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
@@ -169,7 +169,7 @@
             </a>
             <span class="hotel-card-type">Гостиница</span>
             <span class="hotel-card-price">От 1500 ₽</span>
-            <a class="hotel-card-button button" href="#">Подробнее</a>
+            <a class="hotel-card-button-more button" href="#">Подробнее</a>
             <a class="hotel-card-button button" href="#">В избранное</a>
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
             <img class="stars-rating-img" alt="звезда" width="18" height="17" src="images\icons\star.svg">
@@ -178,32 +178,32 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="page-button button pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="page-button button pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="page-button button pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="page-button button pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="button pagination-link" href="#">...</a>
+            <a class="page-button button pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="page-button button pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
       <section class="subscription-white">
       <h2 class="subscription-title block-title">Подпишитесь на рассылку</h2>
-      <p class="subscription-text block-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="second-subscription-text block-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="subscription-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
         <button class="button subscription-button" type="submit">
-          <span class="visually-hidden">Отправить</span>
+          <span class="visually-hidden">Подписаться</span>
         </button>
       </form> 
     </section>
