@@ -2,16 +2,16 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/ptsans-400.woff2) format(woff2); 
+  src: url(../fonts/ptsans-400.woff2) format(woff2); 
   font-display: swap;
-  }
+}
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/ptsans-700.woff2) format(woff2); 
+  src: url(../fonts/ptsans-700.woff2) format(woff2); 
   font-display: swap;
-  }
+}
 
 body {
    font-family: "PT Sans", sans-serif;
@@ -19,7 +19,8 @@ body {
    line-height: 21px;
    color: #000000;
    background-color: #FFFFFF;
-   }
+}
+
 /*Самая главная шапка*/
 .navigation-link {
   font-weight: 700;
@@ -27,8 +28,15 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  }
-.button{
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.button {
+  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -39,11 +47,13 @@ body {
   border-radius: 4px;
   border-color: rgba(0, 0, 0, 0.0);
 }
-.wish-button{
+
+.wish-button {
   background: #756157;
 }
+
 /*Картинка-текст*/
-.hero{
+.hero {
   height: 485px;
   background-color:grey;
   background:url("../images/white.svg") no-repeat bottom,
@@ -51,153 +61,201 @@ body {
   background-size: 100% auto;
   text-align: center;
 }
+
 /*Тексты общее*/
-.hidden-title{
+.hidden-title {
   clip-path: inset(100%);
 }
-.block-title{
+
+.block-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
-.block-text{
+
+.block-text {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
-li {
-    list-style-type: none;
-    }
+
 /*Преимущества*/
-.advantages{
+.advantages {
   text-align: center;
 }
-.advantages-item-title{
+
+.advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
-.white.advantages-item-text,
-.grey.advantages-item-text{
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.white,
+.grey {
   color: #333333;
 }
-.blue{
+
+.blue {
   color: #FFFFFF;
   background: #82B3D3;
 }
+
 /*Услуги*/
-ul.services-list li{
-  display: inline-block;
+.services-list li {
+  list-style-type: none;
 }
-.services{
+
+.services {
   text-align: center;
 }
-.services-item-title{
+
+.services-item-title {
  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
-.services-item-text{
+
+.services-item-text {
   color: #333333;
 }
-.side{
+
+.side {
   background: rgba(131, 179, 211, 0.12);
 }
 
 /*Поиск*/
-.search{
+.search {
    text-align: center;
-   }
-.search-button{
+}
+
+.search-button {
   background: #756157;
   font-size: 20px;
   line-height: 36px;
 }
+
 /*Подписка*/
-.subscription{
+.subscription {
   text-align: center;
   color:  #FFFFFF;
   background: lightblue url("../images/background-img/subscribe.jpg")  no-repeat ;
   background-size:100% auto;
   padding: 96px 258px 104px;
 }
-.subscription-white{
+
+.subscription-white {
   text-align: center;
 }
-.subscription-text{
+
+.subscription-text {
   color:  #FFFFFF;
 }
-.second-subscription-text{
+
+.second-subscription-text {
   color: #333333;
 }
-.subscription-button{
+
+.subscription-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82B3D3;
-  font-size: 16px;
-  line-height: 20px;
 }
+
 /*шапка каталога*/
-.inner-header{
+.inner-header {
   background: lightblue url("../images/background-img/filter.jpg")  no-repeat ;
   background-size:100% auto;
   color: #FFFFFF;
 }
-.inner-header-title{
+
+.inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
-.breadcrumbs-text{
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-text {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
 }
- .catalog-filter-title{
+
+.catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
- }
- .choosing-input{
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}  
+
+.choosing-input {
   line-height: 23px;
- }
- .catalog-submit{
+}
+
+.catalog-submit {
   background: #82B3D3;
- }
- .catalog-reset{
+}
+
+.catalog-reset {
   background: rgba(0, 0, 0, 0.0);
- }
+}
+
 /*Карточки гостиниц*/
- .select-control{
+.select-control {
   color: #333333;
- }
- .hotel-card-link{
+}
+
+.hotel-card {
+  list-style-type: none;
+}
+
+.hotel-card-link {
   text-decoration: none;
   color: #000000;
- }
- .hotel-card-title{
+}
+
+.hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
- }
- .hotel-card-type,
- .hotel-card-price{
+}
+
+.hotel-card-type,
+.hotel-card-price {
   color: #333333;
- }
- .hotel-card-button-more,
- .hotel-card-button{
+}
+
+.hotel-card-button-more,
+.hotel-card-button {
+  display: inline-block;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
- }
- .hotel-card-button-more{
+}
+
+.hotel-card-button-more {
   background: #756157;
- }
- .hotel-card-button{
+}
+
+.hotel-card-button {
   background: #82B3D3;
- }
- .popularity-rating{
+}
+
+.popularity-rating {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -206,11 +264,14 @@ ul.services-list li{
   padding: 8px 50px;
   background: #F2F2F2;
   border-radius: 4px;
- }
- ul.pagination li{
+}
+
+.pagination li{
   display: inline-block;
- }
- .page-button{
+  list-style-type: none;
+}
+
+.page-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -219,12 +280,14 @@ ul.services-list li{
   padding: 8px 8px;
   margin-right: 8px;
   border-radius: 4px;
- }
- .pagination-link{
+}
+
+.pagination-link {
   text-decoration: none;
 }
+
 /*Подвал*/
-.footer-contacts-phone{
+.footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -233,23 +296,30 @@ ul.services-list li{
   text-decoration: none;
 }
 
+.footer-social-list {
+  list-style-type: none;
+}
+
 /*Поиск форма*/
-.search-form-label{
+.search-form-label {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
-.warning-red{
+
+.warning-red {
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
 }
-.places{
+
+.places {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
 }
-.side-information{
+
+.side-information {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -257,7 +327,8 @@ ul.services-list li{
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.search-form-button{
+
+.search-form-button {
   font-size: 20px;
   line-height: 24px;
   background: #83B3D3;
