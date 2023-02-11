@@ -24,14 +24,18 @@ body {
    color: #000000;
    background-color: #FFFFFF;
    margin: 0;
-   display: flex;
-   flex-direction: column;
    min-height: 100%;
 }
 
 .body-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 1200px;
+}
+
+.main-container {
   flex-grow: 1;
 }
 
@@ -88,7 +92,7 @@ ul.navigation-list li{
 
 /*Тексты общее*/
 .hidden-title {
-  clip-path: inset(100%);
+  visibility: hidden;
 }
 
 .block-title {
@@ -195,7 +199,6 @@ div.advantages-blue-2 {
 .services-item {
   padding: 81px 85px;
   width: 230px;
-  margin: 0S;
 }
 
 .services-item-title {
@@ -373,7 +376,7 @@ width: 1060px;
   border-radius: 4px;
 }
 
-ul.pagination li{
+ul.pagination {
   display: flex;
   list-style-type: none;
 }
