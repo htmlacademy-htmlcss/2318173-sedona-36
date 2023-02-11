@@ -29,9 +29,12 @@ body {
    min-height: 100%;
 }
 
-.main-container {
+.body-container {
+  margin: 0 auto;
+  width: 1200px;
   flex-grow: 1;
 }
+
 
 /*Самая главная шапка*/
 .main-header {
@@ -41,7 +44,7 @@ body {
 }
 
 ul.navigation-list li{
-  display: inline;
+  display: flex;
   width: 370px;
   list-style-type: none;
   margin-left: 30px;
@@ -118,23 +121,29 @@ ul.navigation-list li{
   line-height: 28px;
   text-transform: uppercase;
   padding-bottom: 62px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 62pxs;
+}
+
+.advantages-item-text {
+  margin: 0;
 }
 
 .advantages-list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style-type: none;
 }
 
-.white,
-.grey {
+li.advantages-item.white,
+li.advantages-item.grey {
+  padding: 113px 85px;
   color: #333333;
-  width: 230px;
-  padding: 103px 85px;
   margin: 0;
+  width: 230px;
 }
 
 .grey {
@@ -145,36 +154,24 @@ ul.navigation-list li{
   background: rgba(131, 179, 211, 0.12);
 }
 
-.blue {
+li.advantages-item.blue {
+  display: flex;
   color: #FFFFFF;
   background: #82B3D3;
+  margin: 0;
   width: 100%;
 }
 
-.advantages-blue-1 {
-  float: left;
-  width: 230px;
-  padding: 85px;
-  padding-bottom: 0;
+div.advantages-blue-1 {
   margin: 0;
-}
-
-.advantages-blue-2 {
-  float: right;
   width: 230px;
-  padding: 85px;
-  padding-bottom: 0;
+  padding: 102px 85px;
+}
+
+div.advantages-blue-2 {
+  width: 230px;
+  padding: 102px 85px;
   margin: 0;
-}
-
-
-.advantages-img-1 {
-  float: right;
-}
-
-
-.advantages-img-2 {
-  float: left;
 }
 
 /*Услуги*/
@@ -192,6 +189,8 @@ ul.navigation-list li{
 
 .services-item {
   padding: 81px 85px;
+  width: 230px;
+  margin: 0S;
 }
 
 .services-item-title {
@@ -199,6 +198,7 @@ ul.navigation-list li{
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .services-item-text {
@@ -368,8 +368,8 @@ width: 1060px;
   border-radius: 4px;
 }
 
-.pagination li{
-  display: inline-block;
+ul.pagination li{
+  display: flex;
   list-style-type: none;
 }
 
