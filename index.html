@@ -138,33 +138,41 @@
     <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" alt="логотип академии" width="115" height="33" src="images\html.academy-logo.svg"></a>
     </footer>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="Post">
-        <fieldset class="search-form-group">
-          <legend class="search-form-title block-title">Поиск гостиницы в Седоне</legend>
-          <button class="close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <label class="search-form-label" for="day-of-arrival">Дата заезда:</label>  
-            <input type="text" name="day-of-arrival" id="day-of-arrival" required>
-            <p class="warning-red">Мы не можем отправить вас в прошлое.</p>
-          <label class="search-form-label" for="day-of-departure">Дата выезда:</label>  
-            <input type="text" name="day-of-departure" id="day-of-departure" required>
-            <p class="places">На эти даты есть свободные номера. Пока есть.</p>
-          <label class="search-form-label" for="adults">Взрослые:</label>
-            <button type="button" class="plus-minus-button"> </button>
-          <input type="number" min="1" max="10" step="1" name="adults" id="adults">
-          <button type="button" class="plus-minus-button"> </button>
-          <label class="search-form-label" for="children">Дети:</label>
-          <button type="button" class="plus-minus-button"> </button>
-          <input type="number" min="1" max="10" step="1" name="children" id="children">
-          <button type="button" class="plus-minus-button"> </button>
-          <button type="button" class="information-button"> </button>
-          <p class="side-information">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-        <button class="search-form-button button" type="submit" name="search_form">
-          <span >Найти</span>
+    <div class="modal-window">
+      <div class="search-form-title-div">
+        <h2 class="search-form-title block-title">Поиск гостиницы в Седоне</h2>
+        <button class="close-button">
+          <span class="visually-hidden">Закрыть</span>
         </button>
-        </fieldset>
-      </form>
-   </div>   
+      </div>
+      <div class="search-form-div">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="Post">
+          <fieldset class="search-form-group">
+            <label class="search-form-label label-1" for="day-of-arrival">Дата заезда:</label>  
+              <input class="input input-1" type="text" name="day-of-arrival" id="day-of-arrival" required>
+              <p class="warning-red">Мы не можем отправить вас в прошлое.</p>
+              <label class="search-form-label label-2" for="day-of-departure">Дата выезда:</label>  
+                <input class="input input-2" type="text" name="day-of-departure" id="day-of-departure" required>
+                <p class="places">На эти даты есть свободные номера. Пока есть.</p>
+              <label class="search-form-label label-3" for="adults">Взрослые:</label>
+              <button type="button" class="plus-minus-button"> </button>
+              <input class="input" type="number" min="1" max="10" step="1" name="adults" id="adults">
+              <button type="button" class="plus-minus-button"> </button>
+              <label class="search-form-label label-4" for="children">Дети:
+              <button type="button" class="information-button"> </button>
+              </label>
+              <button type="button" class="plus-minus-button"> </button>
+              <input class="input" type="number" min="1" max="10" step="1" name="children" id="children">
+              <button type="button" class="plus-minus-button"> </button>
+              
+              <p class="side-information">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              <button class="search-form-button button" type="submit" name="search_form">
+                <span >Найти</span>
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>   
   </body>
 </html>
