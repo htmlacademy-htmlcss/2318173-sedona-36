@@ -478,9 +478,6 @@ div.advantages-blue-2 {
  } 
 
 .hotel-card-div {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
 width: 1060px;
 }
 
@@ -489,19 +486,40 @@ width: 1060px;
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.hotel-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
+  grid-column: 1 / -1 ;
 }
 
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.hotel-card-price {
+  justify-self: end;
 }
 
 .hotel-card-type,
@@ -519,19 +537,22 @@ width: 1060px;
 
 .hotel-card-button-more {
   background: #756157;
+  padding: 8px 26px;
 }
 
 .hotel-card-button {
   background: #82B3D3;
+  padding: 8px 20px;
 }
 
 .popularity-rating {
+  grid-column: 2 / -1;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-  padding: 8px 50px;
+  padding: 8px 22px;
   background: #F2F2F2;
   border-radius: 4px;
 }
