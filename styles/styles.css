@@ -510,6 +510,13 @@ width: 1060px;
   grid-column: 1 / -1 ;
 }
 
+.hotel-card-image {
+  width: 300px;
+  height: 212px;
+  background: #F2F2F2;
+  object-fit: contain;
+}
+
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
