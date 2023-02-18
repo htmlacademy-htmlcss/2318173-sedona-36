@@ -653,6 +653,12 @@ ul.footer-social-list {
   margin-top: 48px;
 }
 
+.first,
+.second {
+  display: flex;
+  justify-content: space-between;
+}
+
 .search-form-group {
   padding: 0;
   border: none;
@@ -676,6 +682,11 @@ ul.footer-social-list {
   color: #333333;
 }
 
+.input-div {
+  width: 440px;
+  margin: 0;
+}
+
 .input {
   background: #F2F2F2;
   border-radius: 4px;
@@ -684,10 +695,43 @@ ul.footer-social-list {
 
 .input-1,
 .input-2 {
-  width: 400px;
-  height: 24px;
+  width: 440px;
+  height: 48px;
   padding: 12px 20px;
+  box-sizing: border-box;
 }
+
+.third {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adults-div {
+  width: 247px;
+}
+
+.children-div {
+  width: 242px;
+}
+
+.adults-div,
+.children-div {
+  display: flex;
+  justify-content: space-between;
+}  
+
+.plus-minus-div {
+  display: flex;
+  width: 110px;
+}
+
+.plus-minus-button {
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  box-sizing: border-box;
+  border: none;
+} 
 
 .information-button {
   width: 26px;
