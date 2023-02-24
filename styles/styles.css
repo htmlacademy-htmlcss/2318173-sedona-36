@@ -66,6 +66,7 @@ ul.navigation-list {
 }
 
 .navigation-link {
+  position: relative;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -73,6 +74,15 @@ ul.navigation-list {
   text-decoration: none;
   display: block;
   padding: 20px 16px;
+}
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 0px;
+  border: 2px solid #756257;
 }
 
 .secondary-navigation-list {
@@ -232,10 +242,12 @@ li.advantages-item.grey {
 }
 
 .grey {
+  position: relative;
   background: rgba(131, 179, 211, 0.2);
 }
 
 .white {
+  position: relative;
   background: rgba(131, 179, 211, 0.12);
 }
 
@@ -248,12 +260,14 @@ li.advantages-item.blue {
 }
 
 div.advantages-blue-1 {
+  position: relative;
   margin: 0;
   width: 230px;
   padding: 102px 85px;
 }
 
 div.advantages-blue-2 {
+  position: relative;
   width: 230px;
   padding: 102px 85px;
   margin: 0;
@@ -262,6 +276,30 @@ div.advantages-blue-2 {
 .advantages-blue-1 h3,
 .advantages-blue-2 h3{
   color: #FFFFFF;
+}
+
+.advantages-blue-1::before,
+.advantages-blue-2::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  left: 170px;
+  right: 170px;
+  top: 188px;
+  bottom: 195px;
+}
+
+.advantages-item.grey::before,
+.advantages-item.white::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  left: 170px;
+  right: 170px;
+  top: 199px;
+  bottom: 185px;
 }
 
 /*Услуги*/
@@ -574,6 +612,19 @@ width: 1060px;
   color: #333333;
 }
 
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -789,6 +840,154 @@ ul.footer-social-list {
   margin-top: 8px;
   align-self: center;
 }
+
+/*Состояния кнопок и ссылок*/
+
+.button {
+  cursor:pointer;
+}
+
+.button.brown:hover {
+  background: #615048;;
+}
+
+.button.brown:focus {
+  outline: none;
+  background: #615048;;
+}
+
+.button.blueness:hover {
+  background: #68A2CA;
+}
+
+.button.blueness:focus {
+  outline: none;
+  background: #68A2CA;
+}
+
+.hotel-card-button.favourites {
+  background: #7DB54F;
+  padding: 8px 18px;
+}
+
+.hotel-card-button.favourites:hover {
+  background: #6C9E42;
+ } 
+
+.hotel-card-button.favourites:focus {
+  outline: none;
+  background: #6C9E42;
+ } 
+
+.button.clear:hover {
+  opacity: 0.6;
+}
+
+.button.clear:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+}  
+
+.button.brown:active,
+.button.blueness:active,
+.hotel-card-button.favourites:active,
+.button.clear:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-button.blueness:disabled,
+.catalog-submit.blueness:disabled,
+.wish-button.brown:disabled,
+.search-button.brown:disabled  {
+  background: #E5E5E5;
+}
+
+.button.clear:disabled {
+  opacity: 0.1;
+}
+
+.view-button.button {
+  border: 2px solid #E5E5E5;
+}
+
+.view-button.button:hover {
+  border: 2px solid #000000;
+}
+
+.view-button.button:focus {
+  border: 2px solid  #68A2CA;
+}
+
+.view-button.button:active {
+  border: 2px solid #000000;
+}
+
+.breadcrumbs-text {
+  cursor:pointer;
+}
+
+.breadcrumbs-text:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-text:active {
+  opacity: 0.3;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.htmlacademy {
+  fill: #000000;
+}
+
+.htmlacademy:hover {
+  fill: #756157;
+}
+
+.htmlacademy:focus {
+  fill: #756157;
+}
+
+.htmlacademy:active {
+  fill: #756157;
+  opacity: 0.3;
+}
+
+.yt,
+.tg,
+.vk {
+  fill: #83B3D3;
+}
+
+.yt:hover,
+.tg:hover,
+.vk:hover {
+  fill: #68A2CA;
+}
+
+.yt:focus,
+.tg:focus,
+.vk:focus {
+  fill: #68A2CA;
+}
+
+.yt:active,
+.tg:active,
+.vk:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 /*Поиск форма*/
 .modal-window {
   width: 717px;
@@ -812,6 +1011,19 @@ ul.footer-social-list {
   height: 52px;
 }
 
+.close-button:hover {
+  background: #E6E6E6 url("../images/icons/cross.svg") no-repeat center;
+
+}
+
+.close-button:focus {
+  border: 3px solid #83B3D3;
+}
+
+.close-button:active {
+  background: #E6E6E6 url("../images/icons/cross-opacity.svg") no-repeat center;
+}
+
 .search-form-div {
   width: 577px;
   margin: 64px 70px;
@@ -833,6 +1045,8 @@ ul.footer-social-list {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .warning-red {
@@ -860,12 +1074,34 @@ ul.footer-social-list {
 
 .input-1,
 .input-2 {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
   width: 440px;
   height: 48px;
   background: #F2F2F2 url("../images/icons/date.svg") no-repeat 400px;
   padding: 12px 20px;
   box-sizing: border-box;
 }
+
+.input-1:placeholder,
+.input-2:placeholder {
+  opacity: 0.6;
+}
+
+.input-1:hover,
+.input-2:hover {
+  background: #E6E6E6 url("../images/icons/date.svg") no-repeat 400px;
+} 
+
+.input-1:focus,
+.input-2:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+} 
 
 .third {
   display: flex;
@@ -910,17 +1146,44 @@ margin: 0;
   padding: 14px 10px;
   box-sizing: border-box;
   border: none;
-
+  outline: none;
+  cursor: pointer;
 } 
 
 .minus {
-  background: #F2F2F2 url("../images/icons/minus.svg") no-repeat center;
+  background: #F2F2F2 url("../images/icons/minus-opacity.svg") no-repeat center;
   border-radius: 4px 0 0 4px;
 }
 
 .plus {
-  background: #F2F2F2 url("../images/icons/plus.svg") no-repeat center;
+  background: #F2F2F2 url("../images/icons/plus-opacity.svg") no-repeat center;
   border-radius: 0 4px 4px 0;
+}
+
+.plus:hover {
+  background: #F2F2F2 url("../images/icons/plus.svg") no-repeat center;
+}
+
+.plus-minus-button.plus:focus {
+  background: #F2F2F2 url("../images/icons/plus.svg") no-repeat center;
+  border: 3px solid #83B3D3;
+}
+
+.plus:active {
+  background: #F2F2F2 url("../images/icons/plus-opacity.svg") no-repeat center;
+}
+
+.minus:hover {
+  background: #F2F2F2 url("../images/icons/minus.svg") no-repeat center;
+}
+
+.plus-minus-button.minus:focus {
+  background: #F2F2F2 url("../images/icons/minus.svg") no-repeat center;
+  border: 3px solid #83B3D3;
+}
+
+.minus:active {
+  background: #F2F2F2 url("../images/icons/minus-opacity.svg") no-repeat center;
 }
 
 .information-button {
@@ -929,7 +1192,7 @@ margin: 0;
   background:#83B3D3 url("../images/icons/info-white.svg") no-repeat center;
   border-radius: 50%;
   border: none;
-
+  vertical-align: text-bottom;
 }
 
 .side-information {
