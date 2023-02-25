@@ -22,7 +22,7 @@ body {
    font-size: 18px;
    line-height: 21px;
    color: #000000;
-   background-color: #FFFFFF;
+   background-color: #F2F2F2;;
    margin: 0;
    min-height: 100%;
 }
@@ -33,6 +33,8 @@ body {
   flex-direction: column;
   margin: 0 auto;
   width: 1200px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -100,23 +102,21 @@ ul.navigation-list {
   padding: 22px 12px;
 }
 
-.secondary-navigation .secondary-navigation-item:nth-child(1) .secondary-navigation-link {
+.loupe{
   background: url("../images/icons/search.svg") no-repeat center;
 }
 
-.secondary-navigation .secondary-navigation-item:nth-child(2) .secondary-navigation-link {
+.heart {
   position: relative;
   background: url("../images/icons/heart.svg") no-repeat center; 
 }
 
-.secondary-navigation .secondary-navigation-item:nth-child(2) .secondary-navigation-link::after {
-  content: "12";
-  font-family: 'PT Sans';
+.number-of-favorites {
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  color: #FFFFFF;
   text-align: center;
   position: absolute;
   width: 20px;
@@ -127,10 +127,11 @@ ul.navigation-list {
   border-radius: 10px;
   padding: 5px 4px;
   box-sizing: border-box;
- } 
+  color: #FFFFFF;
+}
 
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -200,7 +201,7 @@ ul.navigation-list {
   text-align: center;
 }
 
-.advantages-title-div{
+.advantages-title-div {
   margin-top: 79px;
   margin-bottom: 79px;
 }
@@ -211,6 +212,7 @@ ul.navigation-list {
 }
 
 .advantages-item-title {
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -242,12 +244,10 @@ li.advantages-item.grey {
 }
 
 .grey {
-  position: relative;
   background: rgba(131, 179, 211, 0.2);
 }
 
 .white {
-  position: relative;
   background: rgba(131, 179, 211, 0.12);
 }
 
@@ -259,47 +259,35 @@ li.advantages-item.blue {
   width: 100%;
 }
 
-div.advantages-blue-1 {
-  position: relative;
+div.advantages-blue-div {
   margin: 0;
   width: 230px;
   padding: 102px 85px;
 }
 
-div.advantages-blue-2 {
+.title-blue {
   position: relative;
-  width: 230px;
-  padding: 102px 85px;
-  margin: 0;
-}
-
-.advantages-blue-1 h3,
-.advantages-blue-2 h3{
   color: #FFFFFF;
 }
 
-.advantages-blue-1::before,
-.advantages-blue-2::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-  left: 170px;
-  right: 170px;
-  top: 188px;
-  bottom: 195px;
-}
-
-.advantages-item.grey::before,
-.advantages-item.white::before {
+.advantages-item-title::before {
   position: absolute;
   content: "";
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
-  left: 170px;
-  right: 170px;
-  top: 199px;
-  bottom: 185px;
+  left: 85px;
+  right: 85px;
+  bottom: 31px;
+}
+
+.title-blue::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  left: 85px;
+  right: 85px;
+  bottom: 31px;
 }
 
 /*Услуги*/
@@ -331,7 +319,7 @@ div.advantages-blue-2 {
 }
 
 .services-item-title {
- font-weight: 700;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -461,15 +449,20 @@ div.advantages-blue-2 {
 }
 
 .main-link {
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   height: 21px;
-  width: 13px;
+  width: 31px;
   padding: 0px 0px 2px;
+  margin-right: 10px;
   background: url("../images/icons/home-white.svg") no-repeat left;
 }
 
-.arrow{
+.main-link::before {
+  content:" ";
+  position: absolute;
+  left: 13px;
   display: inline-block;
   box-sizing: border-box;
   height: 21px;
@@ -529,6 +522,8 @@ div.advantages-blue-2 {
 
 .catalog-reset {
   background: rgba(0, 0, 0, 0.0);
+  border: 3px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
 }
 
 .catalog-button-div {
@@ -560,7 +555,7 @@ div.advantages-blue-2 {
 }
 
 .select-control {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -598,15 +593,15 @@ div.advantages-blue-2 {
   gap:10px
 }
 
-.view .view-button:nth-child(1) {
+.view .card {
   background: url("../images/icons/card.svg") no-repeat center;
 }
 
-.view .view-button:nth-child(2) {
+.view .large-card {
   background: url("../images/icons/large-card.svg") no-repeat center;
 }
 
-.view .view-button:nth-child(3) {
+.view .list {
   background: url("../images/icons/list.svg") no-repeat center;
 }
 
@@ -705,25 +700,7 @@ width: 1060px;
    grid-column: 1 / 2;
 }
 
-.star-1 {
-  background-image: 
-    url("../images/icons/star.svg"),
-    url("../images/icons/star.svg"),
-    url("../images/icons/star.svg"),
-    url("../images/icons/star.svg");
-  background-position: 
-    left,  
-    24px,
-    48px,
-    72px;
-  background-repeat: 
-    no-repeat,
-    no-repeat,  
-    no-repeat,
-    no-repeat;
-}
-
-.star-2 {
+.star-4 {
   background-image: 
     url("../images/icons/star.svg"),
     url("../images/icons/star.svg"),
@@ -756,7 +733,7 @@ width: 1060px;
     no-repeat;
 }
 
-.star-4 {
+.star-2 {
   background-image: 
     url("../images/icons/star.svg"),
     url("../images/icons/star.svg");
@@ -922,6 +899,10 @@ ul.footer-social-list {
   border: 2px solid #E5E5E5;
 }
 
+.view-button.checked {
+  border: 2px solid #000000;
+}
+
 .view-button.button:hover {
   border: 2px solid #000000;
 }
@@ -959,44 +940,36 @@ ul.footer-social-list {
   opacity: 0.3;
 }
 
-.htmlacademy {
+a.htmlacademy-link svg{
   fill: #000000;
 }
 
-.htmlacademy:hover {
+a.htmlacademy-link:hover svg{
   fill: #756157;
 }
 
-.htmlacademy:focus {
+a.htmlacademy-link:focus svg{
   fill: #756157;
 }
 
-.htmlacademy:active {
+a.htmlacademy-link:active svg{
   fill: #756157;
   opacity: 0.3;
 }
 
-.yt,
-.tg,
-.vk {
+a.contacts svg {
   fill: #83B3D3;
 }
 
-.yt:hover,
-.tg:hover,
-.vk:hover {
+a.contacts:hover svg {
   fill: #68A2CA;
 }
 
-.yt:focus,
-.tg:focus,
-.vk:focus {
+a.contacts:focus svg {
   fill: #68A2CA;
 }
 
-.yt:active,
-.tg:active,
-.vk:active {
+a.contacts:active svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -1084,9 +1057,8 @@ ul.footer-social-list {
   border: none;
 }
 
-.input-1,
-.input-2 {
-  font-family: 'PT Sans';
+.input-text {
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1096,21 +1068,21 @@ ul.footer-social-list {
   height: 48px;
   background: #F2F2F2 url("../images/icons/date.svg") no-repeat 400px;
   padding: 12px 20px;
+  border: 3px solid #F2F2F2;
   box-sizing: border-box;
 }
 
-.input-1:placeholder,
-.input-2:placeholder {
+.input-text:placeholder {
   opacity: 0.6;
 }
 
-.input-1:hover,
+.input-text:hover,
 .input-2:hover {
   background: #E6E6E6 url("../images/icons/date.svg") no-repeat 400px;
+  border: 3px solid #E6E6E6;
 } 
 
-.input-1:focus,
-.input-2:focus {
+.input-text:focus {
   outline: none;
   border: 3px solid #83B3D3;
 } 
