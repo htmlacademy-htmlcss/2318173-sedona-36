@@ -402,6 +402,10 @@ div.advantages-blue-div {
   margin-top: 54px;
 }
 
+.subscription-hotels {
+  margin-top: 32px;
+}
+
 .subscription-field {
   background: #F2F2F2;
   width: 432px;
@@ -546,7 +550,7 @@ div.advantages-blue-div {
   justify-content: space-between;
   flex-direction: row;
   width: 1060px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   margin-top: 50px;
 }
 
@@ -564,11 +568,12 @@ div.advantages-blue-div {
   height: 49px;
   padding: 14px 20px;
   appearance: none;
-  background: url("../images/icons/arrow.svg") no-repeat 260px;
+  background: url("../images/icons/arrow.svg") no-repeat 256px;
 }
 
 .select-control {
   color: #333333;
+  border: 2px solid #E5E5E5;
 }
 
 .select-control:hover {
@@ -594,10 +599,12 @@ div.advantages-blue-div {
 }
 
 .view .card {
+  margin-right: 4px;
   background: url("../images/icons/card.svg") no-repeat center;
 }
 
 .view .large-card {
+  margin-right: 2px;
   background: url("../images/icons/large-card.svg") no-repeat center;
 }
 
@@ -666,7 +673,7 @@ width: 1060px;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 11px;
 }
 
 .hotel-card-price {

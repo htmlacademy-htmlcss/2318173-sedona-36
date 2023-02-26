@@ -26,19 +26,20 @@
       <nav class="secondary-navigation">
         <ul class="secondary-navigation-list">
           <li class="secondary-navigation-item">
-            <a class="secondary-navigation-link " href="#">
-              <span class="visually-hidden loupe">Поиск</span>
+            <a class="secondary-navigation-link loupe" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
            <li class="secondary-navigation-item">  
             <a class="secondary-navigation-link heart" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="number-of-favorites">12</span>
             </a>
            </li>
            <li class="secondary-navigation-item">  
             <button class="wish-button button brown">Хочу сюда!</button>
           </li>  
-        </ul> 
+        </ul>
       </nav> 
     </header>
     <main class="main-inner main-container">
@@ -121,7 +122,7 @@
           <h2 class="main-catalog-titlee block-title">Найдено гостиниц: 38</h2>
           <div class="type-of-cards">
             <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвое</option>
+              <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогое</option>
               <option value="popular">По популярности</option>
               <option value="rating">По рейтингу</option>
@@ -224,7 +225,7 @@
         <div class="subscription-div">
           <h2 class="subscription-title block-title">Подпишитесь на рассылку</h2>
           <p class="second-subscription-text block-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscription-form subscription-hotels" action="https://echo.htmlacademy.ru/" method="post">
              <input class="subscription-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
              <button class="button subscription-button blueness" type="submit">
             Подписаться
