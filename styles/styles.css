@@ -1057,16 +1057,16 @@ ul.footer-social-list {
 /*Состояния кнопок и ссылок*/
 
 .button {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .button.brown:hover {
-  background: #615048;;
+  background: #615048;
 }
 
 .button.brown:focus {
   outline: none;
-  background: #615048;;
+  background: #615048;
 }
 
 .button.blueness:hover {
@@ -1347,6 +1347,7 @@ a.contacts:active svg {
   text-align: center;
   padding: 0;
   outline: none;
+  border-radius: 0;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -1357,6 +1358,7 @@ margin: 0;
 
 .children-div {
   width: 242px;
+  position: relative;
 }
 
 .adults-div,
@@ -1416,22 +1418,62 @@ margin: 0;
   background: #F2F2F2 url("../images/icons/minus-opacity.svg") no-repeat center;
 }
 
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+}
+
 .information-button {
   width: 26px;
   height: 26px;
   background:#83B3D3 url("../images/icons/info-white.svg") no-repeat center;
   border-radius: 50%;
   border: none;
-  vertical-align: text-bottom;
 }
 
+.information-button:hover,
+.information-button:focus {
+    background-color: #68A2CA;
+}     
+
+.information-button:hover + .side-information,
+.information-button:focus + .side-information {
+    display: block;
+}
 .side-information {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   background-color: #333333;
+  display: flex;
+  align-items: center;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  width: 216px;
+  max-height: 143px;
+  padding: 15px 18px 18px 22px;
+  margin-left: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.side-information:after {
+  content:'';
+  background: url("../images/icons/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-form-button {
@@ -1441,4 +1483,5 @@ margin: 0;
   border-radius: 10px;
   width: 577px;
   height: 60px;
+  margin-top: 48px;
 }  

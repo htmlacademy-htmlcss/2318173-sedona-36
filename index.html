@@ -186,11 +186,15 @@
                   </div>
                 </div>
                 <div class="children-div">
-                  <label class="search-form-label label-4" for="children">Дети:
-                  <button type="button" class="information-button">
-                    <span class="visually-hidden">Информация</span>
-                  </button>
-                  </label>
+                  <span class="search-form-label">
+                    <label class="search-form-label label-4" for="children">Дети:</label>
+                    <span class="tooltip">
+                      <button type="button" class="information-button" aria-labelledby="side-information">
+                        <span class="visually-hidden">Информация</span>
+                      </button>
+                      <p class="side-information" role="tooltip" id="side-information">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</p> 
+                    </span>
+                   </span> 
                   <div class="plus-minus-div">
                     <button type="button" class="plus-minus-button minus">
                       <span class="visually-hidden">Минус</span>
@@ -202,7 +206,7 @@
                   </div>
                 </div>
               </div> 
-              <p class="side-information">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p> 
+              
                 <button class="search-form-button button blueness" type="submit" name="search_form">
                   Найти
                 </button>
