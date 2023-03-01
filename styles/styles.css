@@ -1353,6 +1353,11 @@ a.contacts:active svg {
 }
 
 .input-3 {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   width: 31px;
   height: 48px;
   text-align: center;
@@ -1455,6 +1460,7 @@ margin: 0;
     display: block;
 }
 .side-information {
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
@@ -1468,6 +1474,7 @@ margin: 0;
   padding: 15px 18px 18px 22px;
   margin-left: 5px;
   position: absolute;
+  top: 43px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
