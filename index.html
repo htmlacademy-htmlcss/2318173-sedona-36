@@ -149,66 +149,68 @@
       <span class="visually-hidden yt">Логотип HTML Academy</span>
     </a>
     </footer>
-    <div class="modal-window">
-      <div class="search-form-title-div">
-        <h2 class="search-form-title block-title">Поиск гостиницы в Седоне</h2>
-        <button class="close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </div>
-      <div class="search-form-div">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="Post">
-          <fieldset class="search-form-group">
-            <div class="first">
-              <label class="search-form-label label-1" for="day-of-arrival">Дата заезда:</label> 
-              <div class="input-div">  
-                <input class="input input-text" type="text" name="day-of-arrival" id="day-of-arrival" placeholder="Укажите дату" required>
-              <p class="warning-red">Мы не можем отправить вас в прошлое.</p>
-              </div>
-            </div>
-            <div class="second">
-              <label class="search-form-label label-2" for="day-of-departure">Дата выезда:</label>
-              <div class="input-div"> 
-                <input class="input input-text" type="text" name="day-of-departure" id="day-of-departure" placeholder="Укажите дату" required>
-                <p class="places">На эти даты есть свободные номера. Пока есть.</p>
-              </div>
-            </div>
-            <div class="third">
-              <div class="adults-div">
-                <label class="search-form-label label-3" for="adults">Взрослые:</label>
-                <div class="plus-minus-div">
-                  <button type="button" class="plus-minus-button minus">
-                    <span class="visually-hidden">Минус</span>
-                  </button>
-                  <input class="input input-3" type="number" min="1" max="10" step="1" name="adults" id="adults">
-                  <button type="button" class="plus-minus-button plus"> </button>
-                </div>
-              </div>
-              <div class="children-div">
-                <label class="search-form-label label-4" for="children">Дети:
-                <button type="button" class="information-button">
-                  <span class="visually-hidden">Информация</span>
-                </button>
-                </label>
-                <div class="plus-minus-div">
-                  <button type="button" class="plus-minus-button minus">
-                    <span class="visually-hidden">Минус</span>
-                  </button>
-                  <input class="input input-3" type="number" min="1" max="10" step="1" name="children" id="children">
-                  <button type="button" class="plus-minus-button plus"> 
-                    <span class="visually-hidden">Плюс</span>
-                  </button>
-                </div>
-              </div>
-            </div> 
-            <p class="side-information">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p> 
-              <button class="search-form-button button blueness" type="submit" name="search_form">
-                Найти
-              </button>
-            </fieldset>
-          </form>
+    <div class="modal-container modal-container-close">
+      <div class="modal-window">
+        <div class="search-form-title-div">
+          <h2 class="search-form-title block-title">Поиск гостиницы в Седоне</h2>
+          <button class="close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </div>
-      </div>
-    </div>   
+        <div class="search-form-div">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="Post">
+            <fieldset class="search-form-group">
+              <div class="first">
+                <label class="search-form-label label-1" for="day-of-arrival">Дата заезда:</label> 
+                <div class="input-div">  
+                  <input class="input input-text" type="text" name="day-of-arrival" id="day-of-arrival" placeholder="Укажите дату" required>
+                <p class="warning-red">Мы не можем отправить вас в прошлое.</p>
+                </div>
+              </div>
+              <div class="second">
+                <label class="search-form-label label-2" for="day-of-departure">Дата выезда:</label>
+                <div class="input-div"> 
+                  <input class="input input-text" type="text" name="day-of-departure" id="day-of-departure" placeholder="Укажите дату" required>
+                  <p class="places">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+              </div>
+              <div class="third">
+                <div class="adults-div">
+                  <label class="search-form-label label-3" for="adults">Взрослые:</label>
+                  <div class="plus-minus-div">
+                    <button type="button" class="plus-minus-button minus">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="input input-3" type="number" min="1" max="10" step="1" name="adults" id="adults">
+                    <button type="button" class="plus-minus-button plus"> </button>
+                  </div>
+                </div>
+                <div class="children-div">
+                  <label class="search-form-label label-4" for="children">Дети:
+                  <button type="button" class="information-button">
+                    <span class="visually-hidden">Информация</span>
+                  </button>
+                  </label>
+                  <div class="plus-minus-div">
+                    <button type="button" class="plus-minus-button minus">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="input input-3" type="number" min="1" max="10" step="1" name="children" id="children">
+                    <button type="button" class="plus-minus-button plus"> 
+                      <span class="visually-hidden">Плюс</span>
+                    </button>
+                  </div>
+                </div>
+              </div> 
+              <p class="side-information">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p> 
+                <button class="search-form-button button blueness" type="submit" name="search_form">
+                  Найти
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div> 
+    </div>  
   </body>
 </html>
