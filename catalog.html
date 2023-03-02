@@ -26,19 +26,20 @@
       <nav class="secondary-navigation">
         <ul class="secondary-navigation-list">
           <li class="secondary-navigation-item">
-            <a class="secondary-navigation-link " href="#">
-              <span class="visually-hidden loupe">Поиск</span>
+            <a class="secondary-navigation-link loupe" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
            <li class="secondary-navigation-item">  
             <a class="secondary-navigation-link heart" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="number-of-favorites">12</span>
             </a>
            </li>
            <li class="secondary-navigation-item">  
             <button class="wish-button button brown">Хочу сюда!</button>
           </li>  
-        </ul> 
+        </ul>
       </nav> 
     </header>
     <main class="main-inner main-container">
@@ -56,61 +57,93 @@
         <section class="hotel-catalog">
           <h2 class="catalog-title visually-hidden hidden-title">Поиск гостиницы с фильтрами</h2>
           
-            <form class="catalog-filter_form" action="https://echo.htmlacademy.ru/" method="Post">
-              <div class="catalog-filter_form-div">
+          <form class="catalog-filter_form" action="https://echo.htmlacademy.ru/" method="Post">
+            <div class="catalog-filter_form-div">
+             <div class="left-div"> 
               <fieldset class="catalog-filter-group infrastructure">
-               <legend class="catalog-filter-title">Инфраструктура:</legend>
-               <ul class="catalog-filter-list">
-                 <li class="catalog-filter-item">
-                    <label class="choosing">
-                      <input class="choosing-input" type="checkbox" name="Swimming_pool" checked>
-                    Бассейн
-                     </label> 
-                 </li>
-                 <li class="catalog-filter-item">
-                   <label class="choosing">
-                     <input class="choosing-input" type="checkbox" name="Parking " checked>
-                    Парковка
-                     </label> 
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="choosing">
-                      <input class="choosing-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
-                     </label> 
-                 </li>
-                 </ul> 
-             </fieldset>
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="choosing">
+                        <input class="choosing-input visually-hidden" type="checkbox" name="Swimming_pool" checked>
+                        <span class="control-mark-extra"></span>
+                        <span class="choosing-input-text">Бассейн</span>
+                      </label> 
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="choosing">
+                        <input class="choosing-input visually-hidden" type="checkbox" name="Parking " checked>
+                        <span class="control-mark-extra"></span>
+                        <span class="choosing-input-text">Парковка</span>
+                      </label> 
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="choosing">
+                        <input class="choosing-input visually-hidden" type="checkbox" name="Wi-Fi">
+                        <span class="control-mark-extra"></span>
+                        <span class="choosing-input-text">Wi-Fi</span>
+                      </label> 
+                    </li>
+                  </ul> 
+              </fieldset>
               <fieldset class="catalog-filter-group type ">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
-               <ul class="catalog-filter-list">
-                 <li class="catalog-filter-item">
-                    <label class="choosing">
-                     <input class="choosing-input" type="radio" name="Type_of_housing" value="Hotel" checked>
-                    Гостиница
-                    </label> 
-                  </li>
-                 <li class="catalog-filter-item">
-                    <label class="choosing">
-                      <input class="choosing-input" type="radio" name="Type_of_housing" value="Motel">
-                    Мотель
-                     </label> 
-                  </li>
-                  <li class="catalog-filter-item">
-                   <label class="choosing">
-                      <input class="choosing-input" type="radio" name="Type_of_housing" value="Apartments">
-                    Апартаменты
-                    </label> 
-                  </li>
-                 </ul> 
-             </fieldset>
-             <fieldset class="catalog-filter-group">
-               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-               </fieldset> 
-               <div class="catalog-button-div">
-              <input class="catalog-submit button blueness" type="submit" name="send_form" value="Применить">
-              <input class="catalog-reset button clear" type="reset" name="clear" value="Сбросить">
-            </div>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="choosing">
+                        <input class="choosing-input visually-hidden" type="radio" name="Type_of_housing" value="Hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="choosing-input-text">Гостиница</span>
+                      </label> 
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="choosing">
+                        <input class="choosing-input visually-hidden" type="radio" name="Type_of_housing" value="Motel">
+                        <span class="control-mark"></span>
+                        <span class="choosing-input-text">Мотель</span>
+                      </label> 
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="choosing">
+                        <input class="choosing-input visually-hidden" type="radio" name="Type_of_housing" value="Apartments">
+                        <span class="control-mark"></span>
+                        <span class="choosing-input-text">Апартаменты</span>
+                      </label> 
+                    </li>
+                  </ul> 
+              </fieldset>
+             </div> 
+             <div class="right-div">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title cost">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-input-div">
+                    <label class="label min-label">
+                      <input class="range-input min" type="number" name="min-price" value="0">
+                      <span class="min-span">от</span>
+                    </label>
+                    <label class="label max-label">
+                      <input class="range-input max" type="number" name="max-price" value="9000">
+                      <span class="max-span">до</span>
+                    </label>  
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar-div" style="left: 0; width: 226px;">
+                      <button class="range-toggle toggle-min" type="button">
+                       <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>   
+                </div>  
+              </fieldset> 
+              <div class="catalog-button-div">
+                <input class="catalog-submit button blueness" type="submit" name="send_form" value="Применить">
+                <input class="catalog-reset button clear" type="reset" name="clear" value="Сбросить">
+              </div>
+             </div> 
             </div>
             </form>
         </section>
@@ -121,7 +154,7 @@
           <h2 class="main-catalog-titlee block-title">Найдено гостиниц: 38</h2>
           <div class="type-of-cards">
             <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвое</option>
+              <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогое</option>
               <option value="popular">По популярности</option>
               <option value="rating">По рейтингу</option>
@@ -143,7 +176,7 @@
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" width="300" height="212" src="images\hotel-img\amara-resort-spa.jpg" alt="фотография к отелю Amara Resort & Spa">
+              <img class="hotel-card-image" width="300" height="212" src="images/hotel-img/amara-resort-spa.jpg" alt="фотография к отелю Amara Resort & Spa">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="hotel-card-type">Гостиница</span>
@@ -157,7 +190,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" width="300" height="212" src="images\hotel-img\villas-at-poco-diablo.jpg" alt="фотография к отелю Villas at Poco Diablo">
+              <img class="hotel-card-image" width="300" height="212" src="images/hotel-img/villas-at-poco-diablo.jpg" alt="фотография к отелю Villas at Poco Diablo">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="hotel-card-type">Гостиница</span>
@@ -171,7 +204,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" width="300" height="212" src="images\hotel-img\desert-quail-inn.jpg" alt="фотография к отелю Desert Quail Inn">
+              <img class="hotel-card-image" width="300" height="212" src="images/hotel-img/desert-quail-inn.jpg" alt="фотография к отелю Desert Quail Inn">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <span class="hotel-card-type">Гостиница</span>
@@ -185,7 +218,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" width="300" height="212" src="images\hotel-img\green-tree-inn.jpg" alt="фотография к отелю GreenTree Inn ">
+              <img class="hotel-card-image" width="300" height="212" src="images/hotel-img/green-tree-inn.jpg" alt="фотография к отелю GreenTree Inn ">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <span class="hotel-card-type">Гостиница</span>
@@ -224,7 +257,7 @@
         <div class="subscription-div">
           <h2 class="subscription-title block-title">Подпишитесь на рассылку</h2>
           <p class="second-subscription-text block-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscription-form subscription-hotels" action="https://echo.htmlacademy.ru/" method="post">
              <input class="subscription-field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
              <button class="button subscription-button blueness" type="submit">
             Подписаться
