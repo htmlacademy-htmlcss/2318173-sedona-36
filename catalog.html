@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon-32x32.ico"> <!-- 32×32 -->
     <title>Гостиницы Седоны</title>
   </head>
   <body>
@@ -47,21 +47,23 @@
       <header class="inner-header">
        <div class="inner-header-div">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs" >
-          <li class="breadcrumbss-item main-link">
-            <a class="breadcrumbss-link  visually-hidden" href="index.html">Главная</a>  
-          </li>
+        <ul class="breadcrumbs">
+          <a class="breadcrumbss-link" href="index.html">
+            <li class="breadcrumbss-item main-link">
+                <span class="visually-hidden">Главная</span> 
+            </li>
+          </a>
           <li class="breadcrumbss-item">
-            <a class="breadcrumbss-link breadcrumbs-text">Гостиницы</a>
+            <a class="breadcrumbss-link breadcrumbs-text" href="catalog.html">Гостиницы</a>
           </li>
         </ul>  
         <section class="hotel-catalog">
           <h2 class="catalog-title visually-hidden hidden-title">Поиск гостиницы с фильтрами</h2>
           
-          <form class="catalog-filter_form" action="https://echo.htmlacademy.ru/" method="Post">
-            <div class="catalog-filter_form-div">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="Post">
+            <div class="catalog-filter-form-div">
              <div class="left-div"> 
-              <fieldset class="catalog-filter-group infrastructure">
+              <fieldset class="catalog-filter-group fieldset infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -87,7 +89,7 @@
                     </li>
                   </ul> 
               </fieldset>
-              <fieldset class="catalog-filter-group type ">
+              <fieldset class="catalog-filter-group fieldset type ">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -115,7 +117,7 @@
               </fieldset>
              </div> 
              <div class="right-div">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group fieldset">
                 <legend class="catalog-filter-title cost">Стоимость, ₽:</legend>
                 <div class="range">
                   <div class="range-input-div">
