@@ -381,6 +381,10 @@ body {
   font-size: 20px;
   line-height: 36px;
   margin-top: 51px;
+  max-width: 376px;
+  min-height: 36px;
+  text-align: center;
+  text-decoration: none;
 }
 
 /*Подписка*/
@@ -389,7 +393,7 @@ body {
   color: #ffffff;
   background: url("../images/background-img/subscribe.jpg")  no-repeat;
   background-color: lightblue;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   padding: 98px 258px 104px;
 }
 
@@ -471,7 +475,7 @@ body {
 .inner-header {
   background: url("../images/background-img/filter.jpg")  no-repeat;
   background-color: lightblue;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   color: #ffffff;
   min-height: 412px;
 }
@@ -819,6 +823,9 @@ body {
 
 .main-catalog-titlee {
   padding: 8px 0;
+  max-width: 350px;
+  min-height: 36px;
+  overflow: auto;
 }
 
 .select-control {
@@ -965,11 +972,13 @@ body {
 .hotel-card-button-more {
   background: #756157;
   padding: 8px 26px;
+  height: 20px;
 }
 
 .hotel-card-button {
   background: #82b3d3;
   padding: 8px 20px;
+  height: 20px;
 }
 
 .star {
@@ -1082,11 +1091,12 @@ body {
   text-decoration: none;
   margin-top: 45px;
   margin-bottom: 35px;
+  max-width: 650px;
+  min-height: 50px;
 }
 
 .footer-social-list {
   display: flex;
-  flex-wrap: wrap;
   flex-wrap: wrap;
   list-style-type: none;
   margin-top: 45px;
@@ -1407,13 +1417,13 @@ body {
   border-radius: 0;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.input-3[type="number"]::-webkit-outer-spin-button,
+.input-3[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+.input-3[type="number"] {
   -moz-appearance:textfield;
 }
 
